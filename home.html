@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="container">
+        <div class="user"><label for="">Username:</label><input type="text" name="name" value=""></div>
+        <div class="pass">
+          <label for="">Current Password:</label><input type="password" name="name" value="">  </div>
+          <div class="new_pass">
+            <label for="">New Password:</label><input type="password" name="name" value="">  </div>
+            <div class="new_pass2">
+              <label for="">Re-type Password:</label><input type="password" name="name" value="">  </div>
+            <div class="avatar">
+
+      <label for="">Avatar:</label><img src="download.jpg" alt="" /><input type="file" name="name" value="" accept="image/gif, image/jpeg, image/png">  </div>
+      <button type="button" name="submitButton">Apply changes</button>
+        </div>
+        <style media="screen">
+        html{
+          font-family:"Open Sans";
+        }
+
+        body{
+          margin:0;
+          padding:0;
+          overflow-x: hidden;
+          overflow-y: hidden;
+        }
+    .container, label, input{
+      display:block;
+      margin:0 auto;
+      text-align: center;
+    }
+    input,label{
+      margin-top: 10px;
+      padding-top: 10px;
+    }
+
+    .container label, .container input{
+      display: inline;
+    }
+    .avatar label, .avatar img{
+      display:block;
+    }
+    .avatar img{
+      border: 2px solid gray;
+      border-radius: 0%;
+      height: 300px;
+      margin:0 auto;
+      margin-top: 5px;
+      }
+      .container label{
+        margin-right: 20px;
+      }
+      .container div{
+        margin-top: 40px;
+        color: #007399;;
+      }
+
+      .container{
+        height: 900px;
+        width:100%;
+      }
+
+      .user{
+        position: relative;
+        left: 24px;
+    }
+    .new_pass{
+        position: relative;
+        left: 10px;
+    }
+    .container div input[type=text], .container div input[type=password]{
+      text-align: left;
+      padding:0;
+      padding-left: 5px;
+      padding-top: 2px;
+      font-size: 14px;
+      border:1px solid #007399;;
+    }
+
+    .new_pass2{
+      position: relative;
+    }
+    .container button{
+    margin-top: 50px;
+    margin-left: 650px;
+    background-color: #007399;
+    border: 1px solid white;
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+    }
+    .container button:hover{
+      letter-spacing: 0.05em;
+      background-color: #0086b3;
+      transition: 0.1s;
+      cursor:pointer;
+    }
+    input[type="file" i]::-webkit-file-upload-button{
+      background-color: #007399;
+        border: 1px solid white;
+        color: white;
+        padding: 7px;
+        border-radius: 5px;
+    }
+    input[type="file" i]::-webkit-file-upload-button:hover{
+      letter-spacing: 0.05em;
+      background-color: #0086b3;
+      transition: 0.1s;
+      cursor:pointer;
+    }
+    @media (max-width: 1210px) {
+      .container button {
+        text-align: center;
+        margin:0 auto;
+        margin-top:50px;
+      }
+        .avatar img{
+          height: 200px;
+        }
+
+    }
+        </style>
+
+  </body>
+</html>
