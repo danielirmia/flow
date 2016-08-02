@@ -1,5 +1,6 @@
 html{
   font-family:"Open Sans";
+  background-color: #f5f5f5
 }
 body{
   margin:0;
@@ -10,27 +11,26 @@ body{
       border: 1px solid gray;
       text-align: center;
       margin: 0 auto;
-      width: 400px;
+      width: 30%;
       height: 350px;
-      padding-right: 140px;
       margin-top: 150px;
       color:white;
       background: linear-gradient(to right, #007399, #006182);
-
-
       border: 2px solid gray;
     }
+
 form{
-    margin-top: 25px;
+    margin-top: 45px;
 }
 form div{
   padding-top: 50px;
-  float:right
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
 }
 form input[type=submit]{
-  position: relative;
-  top:200px;
-  left:298px;
+  top: 200px;
+  left: 298px;
   font-size: 16px;
   background-color: #00475f;
   border: 0px;
@@ -39,32 +39,35 @@ form input[type=submit]{
   padding-left: 15px;
   padding-right: 15px;
   border: 1px solid #ababab;
+  float: right;
+  margin-top: 70px;
+  margin-right: 60px;
 }
+
 form input[type=submit]:hover{
-  background-color: #006182
+  background-color: #006182;
 }
 
 form input[type=text],form input[type=password]{
   border-radius: 5px;
+  width: 60%;
 }
-
-.iconita2 {
-    position:relative;
+form input[type=password]{
+  width: 64%;
+}
+.iconita {
     font-size: 30px;
     font-family: 'Audiowide';
-    width: 100%;
     display: inline;
-    right:130px;;
+    float:left;
 }
 
-.iconita2:hover{
+.iconita:hover{
   cursor: pointer;
 }
 
 
-
-
-.footer2{
+.footer{
     border-top: 1px solid #cccccc;
     background-color: #e6e6e6;
     clear: both;
@@ -73,9 +76,8 @@ form input[type=text],form input[type=password]{
     margin: 0 auto;
     text-align: center;
     color:#333333;
-    margin-top: 230px;
 }
-.footer-main2{
+.footer-main{
   display: inline-block;
   color:#333333;
 }
@@ -91,6 +93,11 @@ form input[type=text],form input[type=password]{
 
 .contact ul li{
   padding-right:20px;
+  padding-right: 20px;
+margin: 0 auto;
+text-align: center;
+padding: 0;
+padding: 10px;
 }
 .contact ul li a i{
   color:#007399;
@@ -101,14 +108,66 @@ form input[type=text],form input[type=password]{
   cursor: pointer;
 }
 
-.footer-main2 p a{
+.footer-main p a{
   text-decoration: none;
   color: #333333;
 }
 
-.footer-main2 p a:hover{
-  color: white;
+.footer-main p a:hover{
+  color: #007399;
 }
+
 .contact p,.contact ul,.contact  li{
   display:inline-block;
+}
+
+
+.content{
+    width: 100%;
+    height: 230px;
+}
+
+@media(max-width:1604px){
+  .wraper{
+    width:40%;
+  }
+}
+
+@media(max-width:1211px)  {
+  .wraper{
+    width:45%;
+  }
+  form div{
+    width:80%;
+  }
+}
+@media(max-width:720px)  {
+  .wraper{
+    width:70%;
+  }
+}
+@media(max-width:430px)  {
+  .wraper{
+    width:70%;
+  }
+  label{
+    display:block;
+  }
+  .input[type:text],.input[type:password]{
+    width: 100%
+  }
+  form div{
+    width:80%;
+  }
+  form input[type=submit]{
+    float: none;
+    margin: 0 auto;
+    margin-top:70px;
+  }
+}
+
+input[type=submit]:hover{
+  transition: 0.2s;
+  padding-left:16px;
+  padding-right:16px;
 }

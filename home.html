@@ -8,29 +8,69 @@
   </head>
   <body>
     <div class="container">
-        <div class="user"><label for="">Username:</label><input type="text" name="name" value=""></div>
-        <div class="pass">
-          <label for="">Current Password:</label><input type="password" name="name" value="">  </div>
-          <div class="new_pass">
-            <label for="">New Password:</label><input type="password" name="name" value="">  </div>
-            <div class="new_pass2">
-              <label for="">Re-type Password:</label><input type="password" name="name" value="">  </div>
-            <div class="avatar">
-
-      <label for="">Avatar:</label><img src="download.jpg" alt="" /><input type="file" name="name" value="" accept="image/gif, image/jpeg, image/png">  </div>
-      <button type="button" name="submitButton">Apply changes</button>
+        <div class="A">
+          <div class="user"><label for="">Username:</label><input type="text" name="name" value=""></div>
+          <div class="pass">
+            <label for="">Current Password:</label><input type="password" name="name" value="">  </div>
+            <div class="new_pass">
+              <label for="">New Password:</label><input type="password" name="name" value="">  </div>
+              <div class="new_pass2">
+                <label for="">Re-type Password:</label><input type="password" name="name" value="">  </div>
         </div>
-        <style media="screen">
-        html{
-          font-family:"Open Sans";
-        }
+        <div class="B">
+          <label for="">Avatar:</label><img src="download.jpg" alt="" /><input type="file" name="name" value="" accept="image/gif, image/jpeg, image/png">  </div>
+          <button type="button" name="submitButton">Apply changes</button>
+        </div>
+        <div class=C>
 
-        body{
-          margin:0;
-          padding:0;
-          overflow-x: hidden;
-          overflow-y: hidden;
-        }
+        </div>
+        </div>
+
+
+        <style media="screen">
+
+.A{
+  border:1px solid #007399;
+  width: 45%;
+  height: 100%;
+  display: inline-block;
+}
+
+.B{
+  border:1px solid blue;
+  width: 45%;
+  height: 100%;
+  display: inline-block;
+}
+
+.C{
+  //background-color:green;
+  //clear:both;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+    html{
+      font-family:"Open Sans";
+      height: 100%;
+    }
+
+    body{
+      margin:0;
+      padding:0;
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
     .container, label, input{
       display:block;
       margin:0 auto;
@@ -58,12 +98,12 @@
         margin-right: 20px;
       }
       .container div{
-        margin-top: 40px;
-        color: #007399;;
+        margin-top: 30px;
+        //color: #007399;;
       }
 
       .container{
-        height: 900px;
+        height: 800px;
         width:100%;
       }
 
