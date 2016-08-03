@@ -29,40 +29,41 @@ body{
   text-align: center;
   padding-top: 2px;
   padding-right: 45px;
-  -webkit-transition: .1s all;
-  -webkit-transition-delay: 1s;
-  -moz-transition: .1s all;
-  -moz-transition-delay: 1s;
-  -ms-transition: .1s all;
-  -ms-transition-delay: 1s;
-  -o-transition: .1s all;
-  -o-transition-delay: 1s;
-  transition: .1s all;
-  transition-delay: 1s;
+  -webkit-transition: .2s all;
+  -webkit-transition-delay: .2s;
+  -moz-transition: .2s all;
+  -moz-transition-delay: 2s;
+  -ms-transition: .2s all;
+  -ms-transition-delay: .2s;
+  -o-transition: .2s all;
+  -o-transition-delay: .2s;
+  transition: .2s all;
+  transition-delay: .2s;
 }
 .userInfo a{
-  -webkit-transition: .1s all;
-  -webkit-transition-delay: 1s;
-  -moz-transition: .1s all;
-  -moz-transition-delay: 1s;
-  -ms-transition: .1s all;
-  -ms-transition-delay: 1s;
-  -o-transition: .1s all;
-  -o-transition-delay: 1s;
-  transition: .1s all;
-  transition-delay: 1s;
+  -webkit-transition: .2s all;
+  -webkit-transition-delay: .2s;
+  -moz-transition: .2s all;
+  -moz-transition-delay: 2s;
+  -ms-transition: .2s all;
+  -ms-transition-delay: .2s;
+  -o-transition: .2s all;
+  -o-transition-delay: .2s;
+  transition: .2s all;
+  transition-delay: .2s;
 }
 
 .userInfo:hover a{
   color:white;
   cursor: pointer;
-  background-color: #007399;
+  background-color: #b1b1b1;
   transition: 0.2s;
 }
 
 
 .userInfo:hover{
-  background-color: #007399;
+  background-color: #b1b1b1;
+
   transition: 0.2s;
 }
 
@@ -324,7 +325,7 @@ left: 20px;
     position: relative;
     left: 0px;
     top: 0px;
-    background-color: #007399;
+    background-color:#ededed;
     list-style: none;
     text-decoration: none;
     color: white;
@@ -343,13 +344,14 @@ left: 20px;
 .userMenu li{
   list-style: none;
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 16px;
 }
 
 .userMenu li div:hover{
-  background-color: #0086b3;
+  background-color: #38829a;
   cursor: pointer;
+  color:white;
 }
 
 .userInfo:hover + .userMenu{
