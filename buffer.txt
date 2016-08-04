@@ -9,3 +9,30 @@
 
 <label for="">Avatar:</label><img src="download.jpg" alt="" /><input type="file" name="name" value="" accept="image/gif, image/jpeg, image/png">  </div>
 <button type="button" name="submitButton">Apply changes</button>
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+<div class="user">
+    <label for="">Username:</label>
+    <input type="text" name="name" value="obama" disabled>
+</div>
+<div class="pass">
+    <label for="">Current Password:</label>
+    <input type="password" name="name" value=""> </div>
+<div class="new_pass">
+    <label for="">New Password: </label>
+    <input type="password" name="name" value=""> </div>
+<div class="new_pass2">
+    <label for="">Re-type Password:</label>
+    <input type="password" name="name" value=""> </div>
+<button type="button" class="passwordButton">Change Password</button>
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+<label for="">Avatar:</label><img src="download.jpg" alt="" />
+<input type="file" name="name" value="" accept="image/gif, image/jpeg, image/png">
+<button type="button" class="avatarButton">Change Avatar</button>

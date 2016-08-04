@@ -9,25 +9,42 @@
 
 <body>
     <div class="container">
-        <div class="A">
-            <div class="user">
+        <div class="password-changer left push-bot">
+          <div class="col-1 left">
+
+          </div>
+          <div class="col-2">
+            <div class="user push-bot">
                 <label for="">Username:</label>
-                <input type="text" name="name" value="obama" disabled> </div>
-            <div class="pass">
+                <input type="text" name="name" value="obama" disabled>
+            </div>
+            <div class="pass push-bot">
                 <label for="">Current Password:</label>
                 <input type="password" name="name" value=""> </div>
-            <div class="new_pass">
-                <label for="">New Password:</label>
+            <div class="new_pass push-bot">
+                <label for="">New Password: </label>
                 <input type="password" name="name" value=""> </div>
-            <div class="new_pass2">
+            <div class="new_pass2 push-bot">
                 <label for="">Re-type Password:</label>
                 <input type="password" name="name" value=""> </div>
-            <button type="button" class="passwordButton">Change Password</button>
+
+          </div>
+          <div class="col-3 right">
+              <button type="button" class="passwordButton">Change Password</button>
+          </div>
         </div>
-        <div class="B">
-            <label for="">Avatar:</label><img src="download.jpg" alt="" />
+        <div class="avatar-changer right push-bot">
+          <div class="col-1 left">
+
+          </div>
+          <div class="col-2">
+            <label for="">Avatar:</label> <div class="avatar"> <img src="download.jpg" alt="" /></div>
             <input type="file" name="name" value="" accept="image/gif, image/jpeg, image/png">
-            <button type="button" class="avatarButton">Change Avatar</button>
+
+          </div>
+          <div class="col-3 right">
+              <button type="button" class="avatarButton">Change Avatar</button>
+          </div>
         </div>
         <div class=C>
             <div class="information">
@@ -47,6 +64,36 @@
 
 
     <style media="screen">
+
+    .col-1{
+      height: 100%;
+      width: 25%;
+      display: inline-block;
+      padding: 0;
+      margin-top: 0;
+    }
+    .col-2{
+      height: 100%;
+      width: 50%;
+      display: inline-block;
+      padding: 0;
+            margin-top: 0;
+            position:relative;
+    }
+    .col-3{
+      height: 100%;
+      width: 25%;
+      display: inline-block;
+      padding: 0;
+            margin-top: 0;
+    }
+    .left{
+      float:left;
+    }
+
+    .right{
+      float:right;
+    }
         #myBar span {
             float: left;
             color: white;
@@ -90,16 +137,7 @@
             display: inherit;
         }
 
-        .C p {
-            display: none;
-            font-size: 18px;
-        }
-
-        .A div {
-            margin-top: 15px;
-        }
-
-        .A {
+        .password-changer{
             font-family: "Open Sans";
             border: 1px solid #007399;
             width: 45%;
@@ -110,7 +148,16 @@
             padding: 5px;
         }
 
-        .B {
+        .password-changer div div{
+          width: 100%;
+          margin: 0 auto;
+          text-align: center;
+          margin-top: 30px;
+        }
+        .password-changer div div label{
+            float: left;
+          }
+        .avatar-changer {
             border: 1px solid #007399;
             width: 45%;
             height: 40%;
@@ -120,9 +167,9 @@
             padding: 5px;
         }
 
-        .B img {
-            height: 65%;
-            border: 2px solid gray;
+        .avatar-changer img {
+            height: 100%;
+            width: 100%;
             display: block;
             text-align: center;
             margin: 0 auto;
@@ -132,16 +179,14 @@
             //background-color:green;
             clear: both;
             width: 80%;
-            height: 60%;
+            height: 55%;
             display: block;
             margin: 0 auto;
-            border-bottom: 1px solid #0086b3;
         }
 
         .passwordButton {
             float: right;
-            margin-top: 55px;
-            margin-right: 35px;
+            margin-top: 290px;
         }
 
         html {
@@ -165,53 +210,25 @@
             text-align: center;
         }
 
-        input,
-        label {
-            margin-top: 10px;
-            padding-top: 10px;
-        }
-
         .container label,
         .container input {
             display: inline;
         }
 
-        .avatar label,
-        .avatar img {
-            display: block;
-        }
-
-        .avatar img {
-            border: 2px solid gray;
-            border-radius: 0%;
-            height: 300px;
-            margin: 0 auto;
-            margin-top: 5px;
-        }
 
         .container label {
             margin-right: 20px;
         }
 
         .container {
-            height: 800px;
+            height: 900px;
             width: 100%;
         }
-
-        .A,
-        .B {
+        .push-bot{
             margin-top: 30px;
         }
 
-        .user {
-            position: relative;
-            left: 24px;
-        }
 
-        .new_pass {
-            position: relative;
-            left: 10px;
-        }
 
         .container div input[type=text],
         .container div input[type=password] {
@@ -245,10 +262,14 @@
         .B input {
             display: block;
         }
-
+        .avatar{
+          border: 1px solid gray;
+          width: 80%;
+          margin: 0 auto;
+        }
         .avatarButton {
             float: right;
-            margin-right: 30px;
+            margin-top: 290px;
         }
 
         input[type="file"] {
@@ -268,24 +289,80 @@
             transition: 0.1s;
             cursor: pointer;
         }
+        .pass input{
+          position: relative;
+          right: 25px;
+        }
+        .new_pass2 input{
+        position: relative;
+    right: 26px;
+  }
+  .new_pass input{
+  position: relative;
+right: 16px;
+}
 
-        @media (max-width: 900px) {
-            .container .A,
-            .container .B {
-                display: block;
-                text-align: center;
-                margin: 0 auto;
-                float: none;
-                width: 70%;
-                margin-top: 10px;
+
+
+
+        @media (max-width: 1450px) {
+
+            .password-changer .col-2{
+              width: 70%;
+            }
+            .password-changer .col-1{
+              width: 0px;
+            }
+            .password-changer .col-3{
+              width: 30%;
+            }
+            .password-changer .col-2 input{
+              width: 40%;
             }
         }
-
-        @media (max-width: 900px) {
-            .information {
-                top: 10px;
+        @media (max-width: 840px) {
+          .avatar-changer .col-1{
+            width: 0px;
+          }
+          .avatar-changer .col-2{
+              width: 60%;
+              padding-top: 10px;
             }
+              .avatar-changer .col-3{
+                width: 20%;
+              }
+          .password-changer{
+            display: block;
+            width: 70%;
+            float: none;
+            margin-left: auto;
+margin-right: auto;
+          }
+          .avatar-changer{
+            display: block;
+            width: 70%;
+            float: none;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 10px;
+          }
+          .container{
+            margin: 0 auto;
+            text-align: center;
+          }
+          .information {
+              top: 10px;
+          }
         }
+          .information p{
+            display: none;
+          }
+        @media (max-width: 580px){
+          .avatar-changer .col-2 {
+            width: 75%;
+          }
+        }
+
         button:focus {outline:0;}
     </style>
     <script type="text/javascript">
